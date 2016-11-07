@@ -1,38 +1,48 @@
+@import 'colors.scss';
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 .menu {
-
+    background: white;
     .logo {
         display: inline-block;
     }
 
-    ul {
+    ul.navigation {
         display: inline-block;
         list-style-type: none;
+        margin-left: 150px;
+        @media screen and (max-width: 1170px){
+            margin-left: 50px;
+        }
         li {
             display: inline-block;
+            margin-left: 50px;
+            @media screen and (max-width: 1170px){
+                margin-left: 25px;
+            }
             a {
                 text-decoration: none;
-                color: black;
+                color: $color_black;
                 text-transform: uppercase;
+                font-size: 12px;
                 &:hover {
-                    color: orange;
+                    color: $color_orange_light;
                 }
             }
         }
     }
 }
 .container {
-    max-width: 1024px;
-    margin: 0 auto;
-    background: grey;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 .container  {
+    margin-top: 70px;
+    background: grey;
     h1 {
     margin: 0;
     padding: 0;
@@ -43,4 +53,33 @@ body {
             background: black;
         }
     }
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    border-bottom: 2px solid $color_orange_light;
+    .logo {
+        position: relative;
+        left: 50px;
+
+        font-size: 12px;
+        .orange {
+            color: $color_orange_light;
+        }
+        .bold_grey {
+            color:red;
+        }
+        .title {
+            font-size: 16px;
+        }
+        .subtitle {
+            text-align: center;
+            margin-top: -18px;
+        }
+
+    }
+
 }

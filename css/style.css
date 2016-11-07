@@ -1,35 +1,70 @@
+/**
+ * Asta e color schemul asa ca haide sa vedem ce este defacut
+ */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif; }
 
-.menu .logo {
-  display: inline-block; }
-.menu ul {
-  display: inline-block;
-  list-style-type: none; }
-  .menu ul li {
+.menu {
+  background: white; }
+  .menu .logo {
     display: inline-block; }
-    .menu ul li a {
-      text-decoration: none;
-      color: black;
-      text-transform: uppercase; }
-      .menu ul li a:hover {
-        color: orange; }
+  .menu ul.navigation {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 150px; }
+    @media screen and (max-width: 1170px) {
+      .menu ul.navigation {
+        margin-left: 50px; } }
+    .menu ul.navigation li {
+      display: inline-block;
+      margin-left: 50px; }
+      @media screen and (max-width: 1170px) {
+        .menu ul.navigation li {
+          margin-left: 25px; } }
+      .menu ul.navigation li a {
+        text-decoration: none;
+        color: #111111;
+        text-transform: uppercase;
+        font-size: 12px; }
+        .menu ul.navigation li a:hover {
+          color: #ED541D; }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto;
-  background: grey;
   color: white;
   text-shadow: 1px 1px 1px black; }
 
-.container h1 {
-  margin: 0;
-  padding: 0; }
-.container .section {
-  height: 500px; }
-  .container .section:nth-of-type(2n) {
-    background: black; }
+.container {
+  margin-top: 70px;
+  background: grey; }
+  .container h1 {
+    margin: 0;
+    padding: 0; }
+  .container .section {
+    height: 500px; }
+    .container .section:nth-of-type(2n) {
+      background: black; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-bottom: 2px solid #ED541D; }
+  .menu .logo {
+    position: relative;
+    left: 50px;
+    font-size: 12px; }
+    .menu .logo .orange {
+      color: #ED541D; }
+    .menu .logo .bold_grey {
+      color: red; }
+    .menu .logo .title {
+      font-size: 16px; }
+    .menu .logo .subtitle {
+      text-align: center;
+      margin-top: -18px; }
 
 /*# sourceMappingURL=style.css.map */

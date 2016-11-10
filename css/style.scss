@@ -34,6 +34,40 @@ body {
                 }
             }
         }
+        .hamburger_menu {
+            position: fixed;
+            right: 15px;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            @media screen and (min-width: 900px){
+                display: none;
+            }
+            span {
+                position: absolute;
+                margin-bottom: 1px;
+                display: block;
+                width: 100%;
+                height: 5px;
+                background: $color_orange_light;
+                &:nth-of-type(2) {
+                    top: 8px;
+                }
+                &:nth-of-type(3) {
+                    top: 16px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            li {
+                display: none;
+            }
+            li.hamburger_menu {
+                display: block;
+            }
+        }
+    
     }
 }
 .container {

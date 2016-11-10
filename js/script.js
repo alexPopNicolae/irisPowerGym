@@ -1,3 +1,7 @@
 $(document).ready(function(){
-    console.log("Jquery is set up!");
+
+    $('.hamburger_menu').on('click', function(){
+        console.log("Am apasat pe butonul nostru");
+    });
+
 });

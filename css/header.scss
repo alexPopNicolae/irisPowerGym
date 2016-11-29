@@ -101,16 +101,12 @@ body {
 }
 .container  {
     margin-top: 70px;
-    background: grey;
     h1 {
     margin: 0;
     padding: 0;
     }
     .section {
         height: 600px;
-        &:nth-of-type(2n) {
-            background: black;
-        }
     }
 }
 .menu {

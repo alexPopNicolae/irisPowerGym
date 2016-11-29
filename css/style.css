@@ -84,15 +84,12 @@ body {
   text-shadow: 1px 1px 1px black; }
 
 .container {
-  margin-top: 70px;
-  background: grey; }
+  margin-top: 70px; }
   .container h1 {
     margin: 0;
     padding: 0; }
   .container .section {
     height: 600px; }
-    .container .section:nth-of-type(2n) {
-      background: black; }
 
 .menu {
   position: fixed;
@@ -156,5 +153,10 @@ body {
     transition: all 0.3s ease-in-out; }
     .landing_section .join_us:hover {
       background-color: #DD4813; }
+
+div.section.classes_section {
+  background: white;
+  height: 600px;
+  background: grey; }
 
 /*# sourceMappingURL=style.css.map */

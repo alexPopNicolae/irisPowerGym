@@ -18,18 +18,41 @@ body {
       .menu ul.navigation {
         margin-left: 50px; } }
     .menu ul.navigation li {
+      overflow: hidden;
       display: inline-block;
-      margin-left: 50px; }
+      border-bottom: 1px dotted black;
+      margin-left: 50px;
+      position: relative; }
       @media screen and (max-width: 1170px) {
         .menu ul.navigation li {
           margin-left: 25px; } }
       .menu ul.navigation li a {
+        display: block;
+        padding: 2px 4px;
         text-decoration: none;
         color: #111111;
+        font-style: italic;
         text-transform: uppercase;
-        font-size: 12px; }
-        .menu ul.navigation li a:hover {
-          color: #ED541D; }
+        font-size: 12px;
+        cursor: pointer; }
+        .menu ul.navigation li a.link {
+          transform: translateX(0px);
+          transition: transform 0.2s ease-in-out; }
+      .menu ul.navigation li .mock {
+        position: absolute;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 12px;
+        background: #ED541D;
+        color: white;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in-out; }
+      .menu ul.navigation li:hover {
+        border-bottom: 1px dotted #ED541D; }
+        .menu ul.navigation li:hover .mock {
+          transform: translateX(0); }
+        .menu ul.navigation li:hover .link {
+          transform: translateX(-100%); }
     .menu ul.navigation .hamburger_menu {
       position: fixed;
       right: 15px;
@@ -67,7 +90,7 @@ body {
     margin: 0;
     padding: 0; }
   .container .section {
-    height: 500px; }
+    height: 600px; }
     .container .section:nth-of-type(2n) {
       background: black; }
 
@@ -91,5 +114,47 @@ body {
     .menu .logo .subtitle {
       text-align: center;
       margin-top: -18px; }
+
+.landing_section {
+  background: url("../img/StockSnap_373LUTBH99.jpg") center center no-repeat;
+  background-size: cover; }
+  .landing_section h1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 170px; }
+    .landing_section h1 .orange {
+      color: #FB5B21; }
+  .landing_section p {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: #EDEDED;
+    font-size: 16px;
+    margin-top: 20px; }
+    @media screen and (max-height: 900px) {
+      .landing_section p {
+        width: 80%;
+        line-height: 24px; } }
+  .landing_section .join_us {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #DD4813;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out; }
+    .landing_section .join_us:hover {
+      background-color: #DD4813; }
 
 /*# sourceMappingURL=style.css.map */

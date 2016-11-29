@@ -1,0 +1,47 @@
+.landing_section {
+    background: url('../img/StockSnap_373LUTBH99.jpg') center center no-repeat;
+    background-size: cover;
+    h1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-top: 170px;
+        .orange {
+            color: $color_orange;
+        }
+    }
+    p {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        color: $color_grey_light;
+        font-size: 16px;
+        margin-top: 20px;
+        @media screen and (max-height: 900px) {
+            width: 80%;
+            line-height: 24px;
+        }
+    }
+    .join_us {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 250px;
+        height: 50px;
+        border: 1px solid $color_orange_dark;
+        color:white;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $color_orange_dark;
+        }
+    }
+}

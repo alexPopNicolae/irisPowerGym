@@ -255,7 +255,8 @@ div.section.schedule {
   div.section.schedule .day_buttons {
     padding-top: 20px;
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex; }
     div.section.schedule .day_buttons .day {
       display: inline-block;
       width: 13.5%;
@@ -267,12 +268,37 @@ div.section.schedule {
       line-height: 40px;
       text-shadow: none;
       cursor: pointer;
-      transition: all 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out;
+      margin-left: 10px; }
       div.section.schedule .day_buttons .day:hover {
         background: #ED541D;
         color: white; }
       div.section.schedule .day_buttons .day.active {
         background: #ED541D;
         color: white; }
+  div.section.schedule .full_program {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #ED541D;
+    border-radius: 10px; }
+    div.section.schedule .full_program .program {
+      display: none; }
+      div.section.schedule .full_program .program.active {
+        display: block;
+        padding-top: 10px; }
+        div.section.schedule .full_program .program.active .line {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 10px;
+          height: 40px;
+          border-radius: 10px;
+          display: flex;
+          text-shadow: none;
+          font-weight: bold;
+          background: #DD4813; }
+          div.section.schedule .full_program .program.active .line:nth-of-type(2n) {
+            background: #FB5B21; }
 
 /*# sourceMappingURL=style.css.map */

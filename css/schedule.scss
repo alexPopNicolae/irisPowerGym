@@ -19,6 +19,7 @@ div.section.schedule {
         padding-top: 20px;
         width: 90%;
         margin: 0 auto;
+        display: flex;
         .day {
             display: inline-block;
             width: 13.5%;
@@ -31,6 +32,7 @@ div.section.schedule {
             text-shadow: none;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
+            margin-left: 10px;
             &:hover {
                 background: $color_orange_light;
                 color: white;
@@ -38,6 +40,35 @@ div.section.schedule {
             &.active {
                 background: $color_orange_light;
                 color: white;
+            }
+        }
+    }
+    .full_program {
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background: $color_orange_light;
+        border-radius: 10px;
+        .program {
+            display: none;
+            &.active {
+                display: block;
+                padding-top: 10px;
+                .line {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    height: 40px;
+                    border-radius: 10px;
+                    display: flex;
+                    text-shadow: none;
+                    font-weight: bold;
+                    background: $color_orange_dark;
+                    &:nth-of-type(2n) {
+                        background: $color_orange;
+                    }
+                }
             }
         }
     }

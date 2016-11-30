@@ -100,7 +100,6 @@ body {
     text-shadow: 1px 1px 1px black;
 }
 .container  {
-    margin-top: 70px;
     h1 {
     margin: 0;
     padding: 0;
@@ -110,10 +109,6 @@ body {
     }
 }
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 70px;
     border-bottom: 2px solid $color_orange_light;
     .logo {

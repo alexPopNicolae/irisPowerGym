@@ -83,19 +83,13 @@ body {
   color: white;
   text-shadow: 1px 1px 1px black; }
 
-.container {
-  margin-top: 70px; }
-  .container h1 {
-    margin: 0;
-    padding: 0; }
-  .container .section {
-    height: 600px; }
+.container h1 {
+  margin: 0;
+  padding: 0; }
+.container .section {
+  height: 600px; }
 
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 70px;
   border-bottom: 2px solid #ED541D; }
   .menu .logo {
@@ -156,7 +150,7 @@ body {
 
 div.section.classes_section {
   background: white;
-  height: 600px;
+  height: 500px;
   padding-left: 2%; }
   div.section.classes_section h1 {
     color: black;
@@ -241,6 +235,44 @@ div.section.classes_section {
     div.section.classes_section article:hover .info_container {
       background: #ED541D; }
       div.section.classes_section article:hover .info_container h2, div.section.classes_section article:hover .info_container h3 {
+        color: white; }
+
+div.section.schedule {
+  padding-left: 2%;
+  background: url("../img/schedule_bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: grey;
+  background-blend-mode: multiply;
+  height: 600px; }
+  div.section.schedule h1 {
+    color: black;
+    text-shadow: none;
+    padding-top: 20px;
+    color: white; }
+    div.section.schedule h1 .orange {
+      color: #ED541D; }
+  div.section.schedule .day_buttons {
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto; }
+    div.section.schedule .day_buttons .day {
+      display: inline-block;
+      width: 13.5%;
+      height: 40px;
+      text-align: center;
+      background: #F5F5F5;
+      color: black;
+      border-radius: 10px;
+      line-height: 40px;
+      text-shadow: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; }
+      div.section.schedule .day_buttons .day:hover {
+        background: #ED541D;
+        color: white; }
+      div.section.schedule .day_buttons .day.active {
+        background: #ED541D;
         color: white; }
 
 /*# sourceMappingURL=style.css.map */

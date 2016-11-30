@@ -1,5 +1,110 @@
 div.section.classes_section {
     background: white;
     height: 600px;
-    background: grey;
+    padding-left: 2%;
+    h1 {
+        color: black;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-shadow: none;
+    }
+    article {
+        display: inline-block;
+        width: 24%;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        .image_container {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 0;
+            .image_overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0,0,0,0.6);
+                transform: rotateX(90deg);
+                transition: all 0.3s ease-in-out;
+            }
+            &.aerobic {
+                background: url('../img/aerobic.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &.culturism {
+                background: url('../img/culturism.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &.bjj {
+                background: url('../img/bjj.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &.kickbox {
+                background: url('../img/kixkbox.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            .date_time {
+                position: absolute;
+                left:0;
+                bottom: 0;
+                font-size: 20px;
+                .date {
+                    background: $color_orange_light;
+                    text-shadow: none;
+                    padding: 2px;
+                    display: inline-block;
+                    margin: 0;
+                }
+                .time {
+                    background: white;
+                    text-shadow: none;
+                    padding: 2px;
+                    color: black;
+                    display: inline-block;
+                    margin-left: -6px;
+                }
+            }
+        }
+        .info_container {
+            background: $color_grey_background;
+            padding-left: 20px;
+            margin-top: 0;
+            height: 150px;
+            transition: all 0.3s ease-in-out;
+            h2,h3 {
+                margin:0;
+                padding: 0;
+            }
+            h2 {
+                color: black;
+                text-shadow: none;
+                font-size: 24px;
+                padding-top: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+            h3 {
+                color: grey;
+                text-shadow: none;
+                font-size: 12px;
+                padding-top: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+
+        }
+        &:hover {
+            .image_overlay {
+                transform: rotateX(0deg);
+            }
+            .info_container {
+                background: $color_orange_light;
+                h2,h3 {
+                    color: white;
+                }
+            }
+        }
+    }
 }

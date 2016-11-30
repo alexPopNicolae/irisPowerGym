@@ -157,6 +157,90 @@ body {
 div.section.classes_section {
   background: white;
   height: 600px;
-  background: grey; }
+  padding-left: 2%; }
+  div.section.classes_section h1 {
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: none; }
+  div.section.classes_section article {
+    display: inline-block;
+    width: 24%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; }
+    div.section.classes_section article .image_container {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      margin-bottom: 0; }
+      div.section.classes_section article .image_container .image_overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        transform: rotateX(90deg);
+        transition: all 0.3s ease-in-out; }
+      div.section.classes_section article .image_container.aerobic {
+        background: url("../img/aerobic.jpg") center center no-repeat;
+        background-size: cover; }
+      div.section.classes_section article .image_container.culturism {
+        background: url("../img/culturism.jpg") center center no-repeat;
+        background-size: cover; }
+      div.section.classes_section article .image_container.bjj {
+        background: url("../img/bjj.jpg") center center no-repeat;
+        background-size: cover; }
+      div.section.classes_section article .image_container.kickbox {
+        background: url("../img/kixkbox.jpg") center center no-repeat;
+        background-size: cover; }
+      div.section.classes_section article .image_container .date_time {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 20px; }
+        div.section.classes_section article .image_container .date_time .date {
+          background: #ED541D;
+          text-shadow: none;
+          padding: 2px;
+          display: inline-block;
+          margin: 0; }
+        div.section.classes_section article .image_container .date_time .time {
+          background: white;
+          text-shadow: none;
+          padding: 2px;
+          color: black;
+          display: inline-block;
+          margin-left: -6px; }
+    div.section.classes_section article .info_container {
+      background: #F5F5F5;
+      padding-left: 20px;
+      margin-top: 0;
+      height: 150px;
+      transition: all 0.3s ease-in-out; }
+      div.section.classes_section article .info_container h2, div.section.classes_section article .info_container h3 {
+        margin: 0;
+        padding: 0; }
+      div.section.classes_section article .info_container h2 {
+        color: black;
+        text-shadow: none;
+        font-size: 24px;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out; }
+      div.section.classes_section article .info_container h3 {
+        color: grey;
+        text-shadow: none;
+        font-size: 12px;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out; }
+    div.section.classes_section article:hover .image_overlay {
+      transform: rotateX(0deg); }
+    div.section.classes_section article:hover .info_container {
+      background: #ED541D; }
+      div.section.classes_section article:hover .info_container h2, div.section.classes_section article:hover .info_container h3 {
+        color: white; }
 
 /*# sourceMappingURL=style.css.map */

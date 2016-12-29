@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexPopNicolae/irisPowerGym/issues"
   },
-  "homepage": "https://github.com/alexPopNicolae/irisPowerGym#readme"
+  "homepage": "https://github.com/alexPopNicolae/irisPowerGym#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1"
+  }
 }
